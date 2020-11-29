@@ -1,4 +1,4 @@
-# OakWoods-furniture
+# OaksWoods-furniture
 
 ### `ui-weekend` [preview](https://oakswood-furniture-xd.netlify.app/)
 
