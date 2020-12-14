@@ -28,6 +28,13 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 840px) {
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 /* Left most */
 .left-container__main {
   width: 100%;
@@ -46,6 +53,19 @@ body {
   height: 100%;
 
   min-width: 33.33%;
+}
+
+@media (max-width: 840px) {
+  .left-container__main {
+    flex-direction: column;
+    min-height: 44vh;
+
+    background-position: center;
+  }
+
+  .left-container__main div {
+    flex-grow: 0;
+  }
 }
 
 .left-container__main div:nth-child(1) {
@@ -90,12 +110,28 @@ body {
 
 .text-container__left p {
   font-size: 11px;
-  color: #E0E0E0;
+  color: #e0e0e0;
   font-weight: 300;
 
   width: 96%;
 
   margin-top: 40px;
+}
+
+@media (max-width: 840px) {
+  .text-container__left {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .text-container__left div {
+    margin: 0 auto;
+  }
+
+  .text-container__left p {
+    width: 100%;
+    padding: 0px 30px;
+  }
 }
 
 .center-container__main {
@@ -128,6 +164,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 840px) {
+  .menu-top__center {
+    display: none;
+  }
+}
+
 .menu-top__center div {
   flex-grow: 1;
 
@@ -155,6 +197,13 @@ body {
   padding-top: 20px;
 }
 
+@media (max-width: 840px) {
+  .body-bottom__center {
+    padding: 16px;
+    text-align: center;
+  }
+}
+
 .body-bottom__center h3:nth-child(1) {
   font-size: 56px;
 }
@@ -172,6 +221,20 @@ body {
   line-height: 0.8;
 }
 
+@media (max-width: 840px) {
+  .body-bottom__center h3:nth-child(1) {
+    font-size: 40px;
+  }
+
+  .body-bottom__center h3:nth-child(2) {
+    font-size: 36px;
+  }
+
+  .body-bottom__center h3:nth-child(3) {
+    font-size: 32px;
+  }
+}
+
 .body-divider__body {
   width: 10%;
   background-color: #343a40;
@@ -182,6 +245,19 @@ body {
 .body-bottom__center p {
   width: 60%;
   font-size: 12px;
+}
+
+@media (max-width: 840px) {
+  .body-divider__body {
+    width: 20%;
+    margin: 30px auto;
+  }
+
+  .body-bottom__center p {
+    width: 100%;
+    margin: 24px auto;
+    padding: 0 30px;
+  }
 }
 
 .explore-body-bottom__button {
@@ -199,12 +275,24 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 840px) {
+  .explore-body-bottom__button {
+    margin: 20px auto;
+  }
+}
+
 /* Top-bar right */
 .menu-top__right {
   width: 100%;
   height: 100%;
   max-height: 90px;
   display: flex;
+}
+
+@media (max-width: 840px) {
+  .menu-top__right {
+    display: none;
+  }
 }
 
 .menu-top__right > div:nth-child(1) {
@@ -258,6 +346,12 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 840px) {
+  .main-centrer__right {
+    margin-top: 20px;
+  }
+}
+
 .top-header__main {
   width: 100%;
   height: 100%;
@@ -274,6 +368,8 @@ body {
   margin-left: auto;
 }
 
+
+
 .top-header__main div {
   width: 60%;
   height: 4px;
@@ -281,6 +377,20 @@ body {
   margin: 3px 0;
 
   margin-left: auto;
+}
+
+@media (max-width: 840px) {
+  .top-header__main h3 {
+    width: fit-content;
+    font-size: 28px;
+    margin: 0 auto;
+  }
+
+  .top-header__main div {
+    margin: 8px auto;
+    height: 3px;
+    width: 16%;
+  }
 }
 
 .main-body__main {
@@ -305,6 +415,17 @@ body {
   margin: 16px 0;
 }
 
+@media (max-width: 840px) {
+  .main-body__main {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .body-image__main {
+    min-height: 34vh;
+  }
+}
+
 .body-divider__main {
   width: 20%;
   height: 4px;
@@ -315,6 +436,12 @@ body {
   margin-left: auto;
 }
 
+@media (max-width: 840px) {
+  .body-divider__main {
+    display: none;
+  }
+}
+
 .main-body__main p {
   font-size: 12px;
   width: 80%;
@@ -323,13 +450,28 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 840px) {
+  .main-body__main p {
+    margin: 0 auto;
+    width: 100%;
+
+    padding: 10px 30px;
+  }
+}
+
 /* End */
 .menu-bottom__right {
   width: 100%;
   height: 100%;
   max-height: 70px;
   display: flex;
-  background-color: #37474F;
+  background-color: #37474f;
+}
+
+@media (max-width: 840px) {
+  .menu-bottom__right {
+    display: none;
+  }
 }
 
 .menu-bottom__right div {
@@ -345,6 +487,6 @@ body {
 }
 
 .menu-bottom__right div:hover {
-  background-color: #546E7A;
+  background-color: #546e7a;
   cursor: pointer;
 }
